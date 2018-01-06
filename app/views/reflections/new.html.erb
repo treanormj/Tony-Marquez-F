@@ -1,0 +1,31 @@
+<h2>Please share your memories and thoughts here.</h2>
+<%= image_tag("Tulips, yellow red_.jpg", class:"tullips") %>
+
+<%= form_for(@reflection) do |f| %>
+      <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+    <br>
+    <div class="field">
+      <%= f.label :relationship %>
+      <%= f.text_field :relationship %>
+    </div>
+    <br>
+
+    <div class="textarea">
+      <%= f.label :thoughts %>
+      <%= f.text_area :thoughts %>
+    </div>
+    <br>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>
+<br>
+<br>
+<div class="button_contain">
+  <div align="center" class="button_category" style="float: left">
+    <%= button_to "Home Page", root_path, class:"button", method: :get %>
+  </div>
+</div>

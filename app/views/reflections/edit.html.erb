@@ -1,0 +1,36 @@
+<div class="title">
+  <h1> Edit Question </h1>
+</div>
+<%= form_for(@question) do |f| %>
+<% if @question.errors.any?  %>
+<div id="error_explanation">
+  <h3><%= pluralize(@question.errors.count, "error") %> prohibited this question from being saved </h3>
+  <ul>
+    <% @question.errors.full_messages.each do |message| %>
+      <li>
+        <%= message %>
+      </li>
+    <% end %>
+  </ul>
+</div>
+  <% end %>
+
+
+<div class="field">
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+</div>
+<br>
+<div class="field">
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+</div>
+
+<br>
+<br>
+
+<div class="actions">
+  <%= f.submit %>
+</div>
+
+<% end %>

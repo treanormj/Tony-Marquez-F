@@ -1,0 +1,74 @@
+<br></br>
+<div class="button_contain">
+  <div align="center" class="button_category" style="float: left">
+    <%= button_to "Comments", root_path, class:"button", method: :get %>
+  </div>
+
+  <div align="center" class="button_category" style="float: right">
+    <%= button_to "Pictures", root_path, class:"button", method: :get %>
+  </div>
+</div>
+
+<div class="contain">
+  <div align="center" class="category">
+    <%= image_tag("Spanish Flag vertical.jpg", class:"flag") %>
+  </div>
+  <div align="center" class="center_category">
+    <%= image_tag("last time in Galicia.jpg", class:"centerRound") %>
+  </div>
+  <div align="center" class="category">
+    <%= image_tag("US Flag Vertical.jpg", class:"flag") %>
+  </div>
+</div>
+</br>
+<div class="bio_text">
+  <h3>Anthony Marquez was born in a small town called Pontevedra, which is in Galicia, Spain. His mother was Maria Marquez Gonzalez and his father was Herarldo Marquez. They lived on a small farm that grew corn, potatoes, and children! There were some cows, rats, toads, and frogs. Life was tough and there was never enough food. His father died in 1941 as a result of having different beliefs than the church and the fascists. Tony was the oldest of 5 children, that also included Josefina, Jose, Rosa, and "Henry of Spain" (aka Enrique).</h3>
+
+  <%= image_tag("map of spain.jpg", class:"right") %>
+
+  <h3>Tony was 14 when he went to the airforce academy for 5 years in Leon, Spain to study to be an airplane mechanic. Thankfully he never did any fighting beyond combat with his brothers and sisters. The airforce wasn't too bad because he always had something to eat and he got a very good education. He studied math, physics, history, geography, grammar, rhetoric, and religion, which was the subject he did not like.</br>
+
+  </br>
+  After graduating, Tony went to Madrid to work for Iberia Airlines. He started as a certified airplane mechanic but moved into quality control. Tony worked very little because he was now a supervisor, but he still had plenty of food and wine! During that time period, he came to California for 3 months to train and get a plane. After returning to Spain, he then came to New York to be a represenative for Iberia to Lockhead at Idlewild Airport (aka JFK Airport) in 1955. He never returned to Spain, but he did meet and marry Ramona Herranz Marquez that same year. Ramona did not allow Tony to tell any off color jokes until they were married. She was very innocent! </br>
+</br>
+He continued to work for Iberia for 5 years, but then switched to Capital Airways in Delaware. He became a citizen in 1961. He became a chief inspector for Capital at New Castle Airport.</br>
+</br>
+On December 22, 1958, Gerald Higinio was born, and all of the subsequent births were well paced! Anthony David was born April 4th, 1960. Ramona Marie was born July 10th, 1962, and Jacqueline Lee was born January 14th, 1964. Jackie was named after Jacqueline Kennedy. (If she was a boy, she would have been "John".) Ramona Marie was named after her mother and grandmother. (Her grandmother's full name was Claire Ramona Vazquez.)</br>
+</br>
+Some time in the 1970s, Tony was snaking the toilet, and he was frustated that he couldn't reach the blockage. The curses were flowing freely. Anthony the son came into the house and asked what was hanging from the roof and hitting the side of the house. The snake went up instead of down, and it went all the way out the roof vent! On another occasion, a willow tree grew roots into the sewer pipe, and regrettably the basement flooded. He wrote a letter to the newspaper saying the communists did it as a joke, and readers took him seriously. Tony was a great mechanic, not a very good plumber...</br>
+</br>
+We won't talk about the coffee table. We don't want you to think he was incompetent.</br>
+</br>
+In 1993, Tony retired from the pneumatic tool department in Chrysler. He says he liked to loaf around and continue writing letters to the newspaper. His first letter was in 1961 in defense of teachers! Photography and gardening continued to be "old friends" but he stopped smoking a pipe and Winston cigarettes 20 years ago. At one point, Ramona the wife was being helpful and washed all his pipes with soap and water. Tony graciously walked away without killing anyone.</br>
+</br>
+Anthony Marquez Gonzalez was truly an amazing person and the bravest man we know. He is loved by many people.
+
+</br>
+</br>
+</br>
+<%= image_tag("Me in the mirror.jpg", class:"me") %>
+
+</br>
+
+<div class="thanks">
+  Tony and his family would like to thank so many people for their support. The army of doctors and nurses have been tremendous, especially Dr. Deliri, the staff at the Christiana's Cardiology Short Stay Unit, and Season's Hospice.
+</div>
+</div>
+</h3>
+
+<br>
+<br>
+<div class="button_contain">
+  <div align="center" class="button_category" style="float: left">
+    <%= button_to "Create New Comment", new_reflection_path, class:"button", method: :get %>
+  </div>
+</div>
+<br>
+
+<% @reflections.each do |r| %>
+<ul>
+  <h3>
+    <%= link_to r.name, reflection_path(r) %>
+  </h3>
+</ul>
+<% end %>

@@ -1,0 +1,9 @@
+<h2>Name: <%= @reflection.name %></h2>
+<p>Relationship to Tony: <%= @reflection.relationship %></p>
+<p>Thoughts/Comments: <%= @reflection.thoughts %></p>
+
+<br>
+<div class="bottom_links">
+  <h5><%= link_to 'Delete', @reflection, method: :delete, data: {confirm: 'Are you sure?'} %></h5>
+  <h5><%= link_to 'Home Page', root_path %></h5>
+</div>

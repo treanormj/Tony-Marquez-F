@@ -1,0 +1,193 @@
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+// @import "bootstrap";
+
+body {
+  background-color: #EEDEC6;
+  font-size: 24px;
+  color: #282826;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.title {
+  text-align: center;
+  background-color: #24A257;
+  color: white;
+  margin-bottom: 5%;
+  margin-top: 0px;
+  width: 100%;
+  display: inline-block;
+  margin: auto;
+  line-height: 95%;
+}
+
+.button_contain {
+  max-width: 1500px;
+  text-align:center;
+}
+.button_category {
+  position: relative;
+  display: inline-block;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 1%;
+}
+.bio_text::first-letter {
+    font-size: 350%;
+    font-family: 'Parisienne', cursive;
+    float: left;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+.bio_text {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contain {
+  max-width:1500px;
+  text-align:center;
+  margin-top: 5%;
+}
+
+.center_category {
+  position: relative;
+  display: inline-block;
+  float: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.category {
+  position: relative;
+  display: inline-block;
+  float: center;
+  // padding: 20px;
+}
+
+
+form input[type='text'] {
+  margin-left: 50px;
+  width: 200px;
+  font-size: 14px;
+}
+
+// This 'text_area' format isn't working... 
+form input[type='text_area'] {
+  margin-left: 50px;
+  width: 500px;
+  font-size: 14px;
+}
+//
+// form.textarea[type='text'] {
+//   width: 500px;
+//   font-size: 24px;
+// }
+// .thoughts {
+//   width: 500px;
+//   font-size: 40px;
+// }
+// form input[type='text_area'] {
+//   width: 50%;
+//   font-size: 24px;
+// }
+
+img.me {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: solid 5px;
+  border-color: #282826;
+}
+img.tullips {
+  width: 20%;
+  float: right;
+  margin: 0 auto;
+  border-radius: 10%;
+  border: solid 5px;
+  border-color: #282826;
+  margin-right: 15%;
+}
+img.right {
+  width: 30%;
+  float: right;
+  border: solid 5px;
+  border-color: #282826;
+  margin-left: 5%;
+}
+img.centerRound {
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: solid 5px;
+  border-color: #282826;
+}
+img.flag {
+  width: 125px;
+  height: 225px;
+  display: block;
+  margin: 0 auto;
+  // border-radius: 50px;
+  border: solid 5px;
+  border-color: #282826;
+}
+.thanks {
+  font-style: italic;
+}
+
+// input[type=text]{
+//   width: 60%;
+//   height: 30px;
+//   font-size: 20px;
+// }
+//
+input[type=submit]{
+  /*width: 60%;*/
+  color: white;
+  font-size: 100%;
+  border-radius: 10px;
+  background: #24A257;
+}
+
+// .button {
+//   font-size: xx-large;
+//   margin-left: 75px;
+//   color: black;
+//   /*padding: 16px;*/
+//   -webkit-transition-duration: 0.4s; /* Safari */
+//   transition-duration: 0.4s;
+// }
+.button:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+
+}
+
+
+// .home_links  a {
+//   color: #24A257;
+//   font-size: 20px;
+//   background: white;
+//   padding: 15px;
+//   float: left;
+//   margin: 15px;
+//   border-radius: 10px;
+// }
+
+
+// .answers{
+//   text-decoration: underline;
+// }
+// .question_link  a {
+//   color: red;
+// }
+//
+// a:visited{
+//   color: blue;
+// }
