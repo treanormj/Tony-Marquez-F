@@ -22,10 +22,11 @@ class ReflectionsController < ApplicationController
     redirect_to reflections_url, notice: 'Comment was successfully deleted.'
   end
 
-end
   # this reduces any junk in our submissions. It keeps it with title and description. They could mess things up with curl requests.
-    # private
-    #   def reflection_params
-    #     params.require(:name, :relationship).permit(:thoughts)
-    #   end
-    # end
+    private
+      def reflection_params
+        # params.require(:name).permit(:relationship, :thoughts)
+        params.require(:reflection).permit(:name, :relationship, :thoughts)
+      end
+
+end

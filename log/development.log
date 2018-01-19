@@ -12067,3 +12067,496 @@ Processing by ReflectionsController#index as HTML
 Completed 200 OK in 35ms (Views: 32.5ms | ActiveRecord: 0.9ms)
 
 
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(904173447529208955)[0m
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(904173447529208955)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-01-07 19:15:22 -0500
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (19.7ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (367.1ms)
+Completed 200 OK in 491ms (Views: 454.8ms | ActiveRecord: 31.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-07 19:17:22 -0500
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.8ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 63ms (Views: 47.4ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-01-07 19:17:23 -0500
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 30ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-07 19:17:53 -0500
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.3ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-01-07 19:17:54 -0500
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-01-07 19:17:55 -0500
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 30ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-07 19:19:55 -0500
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.4ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 68ms (Views: 66.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-07 19:20:19 -0500
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.4ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 69ms (Views: 66.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-07 19:20:47 -0500
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.5ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 67ms (Views: 64.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-01-10 13:25:12 -0500
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering static/home.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2018-01-10 13:25:14 -0500
+  Rendered static/home.html.erb within layouts/application (457.3ms)
+Completed 200 OK in 539ms (Views: 538.8ms | ActiveRecord: 0.0ms)
+
+
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (27.2ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (80.1ms)
+Completed 200 OK in 122ms (Views: 47.9ms | ActiveRecord: 53.2ms)
+
+
+Started GET "/reflections/new" for 127.0.0.1 at 2018-01-10 13:25:19 -0500
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (71.9ms)
+Completed 200 OK in 93ms (Views: 90.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reflections" for 127.0.0.1 at 2018-01-10 13:25:25 -0500
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pVqr+IiUQDgU2IYMmdcpR4xBqLQaXpD+Wk5s5RE2OTJMJkBjfPLv6lulfThtbNAzI0vHIfkyTXz41NAIZK7BrA==", "reflection"=>{"name"=>"serg", "relationship"=>"sgsdh", "thoughts"=>"sdfhsdfhdfh"}, "commit"=>"Create Reflection"}
+Completed 500 Internal Server Error in 191ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `reflection_params' for #<ReflectionsController:0x007fcd35ae4a70>
+Did you mean?  reflection_path
+               reflection_url
+               reflections_path):
+  
+app/controllers/reflections_controller.rb:8:in `create'
+Started POST "/reflections" for 127.0.0.1 at 2018-01-10 13:26:29 -0500
+  
+SyntaxError (/Users/marctreanor/challenges/Tony_Marquez_F/app/controllers/reflections_controller.rb:31: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/reflections_controller.rb:31: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/home" for 127.0.0.1 at 2018-01-10 13:28:52 -0500
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-10 13:29:05 -0500
+  
+SyntaxError (/Users/marctreanor/challenges/Tony_Marquez_F/app/controllers/reflections_controller.rb:31: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/reflections_controller.rb:31: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/home" for 127.0.0.1 at 2018-01-10 13:29:19 -0500
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 22ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-10 13:29:22 -0500
+  
+SyntaxError (/Users/marctreanor/challenges/Tony_Marquez_F/app/controllers/reflections_controller.rb:31: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/reflections_controller.rb:31: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/home" for 127.0.0.1 at 2018-01-10 13:35:48 -0500
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-10 13:35:53 -0500
+  
+SyntaxError (/Users/marctreanor/challenges/Tony_Marquez_F/app/controllers/reflections_controller.rb:31: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/reflections_controller.rb:31: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2018-01-10 13:36:13 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/marctreanor/challenges/Tony_Marquez_F/app/controllers/reflections_controller.rb:31: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/reflections_controller.rb:31: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2018-01-10 13:37:35 -0500
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (1.0ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (229.2ms)
+Completed 200 OK in 276ms (Views: 254.1ms | ActiveRecord: 16.7ms)
+
+
+Started GET "/reflections/new" for 127.0.0.1 at 2018-01-10 13:37:54 -0500
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 57ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reflections" for 127.0.0.1 at 2018-01-10 13:38:14 -0500
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"769YcaidGoiaDvNvh4l2hq4tabc3DyBMztIkEp2AeoMG07PqXPu1WtVzCFtzMo/yAScGItRj/c5sSJj/6BiCHQ==", "reflection"=>{"name"=>"Marc", "relationship"=>"son in law", "thoughts"=>"Tony was the best person I ever met"}, "commit"=>"Create Reflection"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/reflections_controller.rb:28:in `reflection_params'
+app/controllers/reflections_controller.rb:8:in `create'
+Started POST "/reflections" for 127.0.0.1 at 2018-01-10 13:54:55 -0500
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"769YcaidGoiaDvNvh4l2hq4tabc3DyBMztIkEp2AeoMG07PqXPu1WtVzCFtzMo/yAScGItRj/c5sSJj/6BiCHQ==", "reflection"=>{"name"=>"Marc", "relationship"=>"son in law", "thoughts"=>"Tony was the best person I ever met"}, "commit"=>"Create Reflection"}
+No template found for ReflectionsController#create, rendering head :no_content
+Completed 204 No Content in 182ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-01-10 13:55:46 -0500
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (201.1ms)
+Completed 200 OK in 241ms (Views: 240.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2018-01-10 13:56:05 -0500
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering static/home.html.erb within layouts/application
+  Rendered static/home.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-10 13:56:20 -0500
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.8ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (63.7ms)
+Completed 200 OK in 97ms (Views: 59.1ms | ActiveRecord: 31.3ms)
+
+
+Started GET "/reflections/new" for 127.0.0.1 at 2018-01-10 13:56:25 -0500
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 40ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reflections" for 127.0.0.1 at 2018-01-10 13:56:51 -0500
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d2EXlXuA72Ps4TQTRWvCn3cSxAosj4jfonO0SVsHrFKeHfwOj+ZAsaOczyex0Dvr2Birn8/jVV0A6QikLp9UzA==", "reflection"=>{"name"=>"Jackie", "relationship"=>"daughter", "thoughts"=>"He was the best!"}, "commit"=>"Create Reflection"}
+No template found for ReflectionsController#create, rendering head :no_content
+Completed 204 No Content in 159ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/reflections/new" for 127.0.0.1 at 2018-01-10 13:57:56 -0500
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 41ms (Views: 23.2ms | ActiveRecord: 8.2ms)
+
+
+Started POST "/reflections" for 127.0.0.1 at 2018-01-10 13:58:34 -0500
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iU1lJGWPqJOWIghV0//hIk32TJxeKL5K3JcL9OyW1qxgMY6/kekHQdlf82EnRBhW4vwjCb1EY8h+DbcZmQ4uMg==", "reflection"=>{"name"=>"jack", "relationship"=>"son", "thoughts"=>"He was OK"}, "commit"=>"Create Reflection"}
+No template found for ReflectionsController#create, rendering head :no_content
+Completed 204 No Content in 158ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-10 14:02:40 -0500
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.4ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-10 14:02:40 -0500
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.6ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-14 13:25:48 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (21.3ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (221.2ms)
+Completed 200 OK in 267ms (Views: 231.7ms | ActiveRecord: 30.0ms)
+
+
+Started GET "/reflections/new" for 127.0.0.1 at 2018-01-14 13:26:23 -0500
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (38.8ms)
+Completed 200 OK in 67ms (Views: 64.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reflections" for 127.0.0.1 at 2018-01-14 13:26:36 -0500
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dkqmaRfcebcI9ma9guZjl5sHvhTUfBFD3TONHEWeAgWn279VOqDeP85dOf1Ven8Zx8rjsS6W6qgNPG9nRseRNw==", "reflection"=>{"name"=>"taco", "relationship"=>"Bello", "thoughts"=>"Tastes great!"}, "commit"=>"Create Reflection"}
+No template found for ReflectionsController#create, rendering head :no_content
+Completed 204 No Content in 163ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-14 13:27:22 -0500
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.4ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-18 17:25:41 -0500
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (18.4ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (364.1ms)
+Completed 200 OK in 498ms (Views: 440.8ms | ActiveRecord: 36.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-18 17:25:46 -0500
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.4ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 38ms (Views: 35.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-18 17:25:46 -0500
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.4ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 35ms (Views: 32.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/reflections/new" for 127.0.0.1 at 2018-01-18 17:26:03 -0500
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 58ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reflections" for 127.0.0.1 at 2018-01-18 17:26:26 -0500
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8VHdDKStgIsTqSg/wHydaoSFR46VRWuIMHttVoHKKpncDVgGvyCkAZ8+PQsydt1wm5upIkMVgbRj4413TtIxAg==", "reflection"=>{"name"=>"alsdkhf", "relationship"=>"happy", "thoughts"=>"He's wonderful and really really nice"}, "commit"=>"Create Reflection"}
+No template found for ReflectionsController#create, rendering head :no_content
+Completed 204 No Content in 169ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-18 17:31:01 -0500
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.4ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/reflections/9" for 127.0.0.1 at 2018-01-18 17:31:06 -0500
+Processing by ReflectionsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mReflection Load (0.9ms)[0m  [1m[34mSELECT  "reflections".* FROM "reflections" WHERE "reflections"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering reflections/show.html.erb within layouts/application
+  Rendered reflections/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 31ms (Views: 19.1ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/reflections/9" for 127.0.0.1 at 2018-01-18 17:31:19 -0500
+Processing by ReflectionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FZI8fertBrlfqAKnSiWw4i+PRtuq3Qml6mjywfg7Ksg4zrl38WAiM9M/F5O4L/D4MJGod3yN45m58BLgNyMxUw==", "id"=>"9"}
+  [1m[36mReflection Load (0.4ms)[0m  [1m[34mSELECT  "reflections".* FROM "reflections" WHERE "reflections"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (6.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "reflections" WHERE "reflections"."id" = $1[0m  [["id", 9]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/reflections
+Completed 302 Found in 18ms (ActiveRecord: 13.7ms)
+
+
+Started GET "/reflections" for 127.0.0.1 at 2018-01-18 17:31:19 -0500
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.4ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/reflections/new" for 127.0.0.1 at 2018-01-18 17:31:24 -0500
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reflections" for 127.0.0.1 at 2018-01-18 17:31:50 -0500
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pCpjAkuWhBzShHCxySZD6Y6OXNblwbcbyZy6h7TO3J+JduYIUBugll4TZYU7LAPzkZCyejORXSeaBFqme9bHBA==", "reflection"=>{"name"=>"pappa", "relationship"=>"his daughter", "thoughts"=>"He liked to wear nice clothes"}, "commit"=>"Create Reflection"}
+No template found for ReflectionsController#create, rendering head :no_content
+Completed 204 No Content in 168ms (ActiveRecord: 0.0ms)
+
+
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mReflection Load (0.6ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (5.2ms)[0m  [1m[32mINSERT INTO "reflections" ("name", "relationship", "thoughts", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Marc"], ["relationship", "son-in-law"], ["thoughts", "Tony is one of the most amazing people I will ever meet."], ["created_at", "2018-01-18 23:01:02.945092"], ["updated_at", "2018-01-18 23:01:02.945092"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "reflections" ("name", "relationship", "thoughts", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Lorelai"], ["relationship", "Granddaughter"], ["thoughts", "Tony is loved very much."], ["created_at", "2018-01-18 23:01:02.953177"], ["updated_at", "2018-01-18 23:01:02.953177"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2018-01-18 18:03:08 -0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (5.6ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (228.1ms)
+Completed 200 OK in 275ms (Views: 253.2ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/reflections/10" for 127.0.0.1 at 2018-01-18 18:03:14 -0500
+Processing by ReflectionsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mReflection Load (0.6ms)[0m  [1m[34mSELECT  "reflections".* FROM "reflections" WHERE "reflections"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering reflections/show.html.erb within layouts/application
+  Rendered reflections/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 55ms (Views: 27.4ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-18 18:29:22 -0500
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (1.7ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (207.0ms)
+Completed 200 OK in 241ms (Views: 226.4ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/reflections/new" for 127.0.0.1 at 2018-01-18 18:29:27 -0500
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 52ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-18 18:30:09 -0500
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (2.3ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 58ms (Views: 46.2ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-18 18:30:24 -0500
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.5ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-18 20:49:18 -0500
+  [1m[35m (6.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.8ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (243.3ms)
+Completed 200 OK in 283ms (Views: 267.1ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/reflections/new" for 127.0.0.1 at 2018-01-18 20:49:24 -0500
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 63ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reflections" for 127.0.0.1 at 2018-01-18 20:49:32 -0500
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T73/i85WxLCVNFsiNQbFt44/aCqOxy9vT1NIG69Mgixi4XqB1dvgOhmjThbHDIWtkSGGhliXxVMcy6g6YFSZtw==", "reflection"=>{"name"=>"alsdkjfhaslkjdfh", "relationship"=>"alksdjfhalsdkjfhalsdkjfh", "thoughts"=>"lkjsdhfalksdjfhasdlkjfh"}, "commit"=>"Create Reflection"}
+No template found for ReflectionsController#create, rendering head :no_content
+Completed 204 No Content in 171ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-19 02:35:41 -0500
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (16.6ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (234.5ms)
+Completed 200 OK in 274ms (Views: 236.0ms | ActiveRecord: 31.9ms)
+
+
+Started GET "/reflections/new" for 127.0.0.1 at 2018-01-19 02:35:46 -0500
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (34.2ms)
+Completed 200 OK in 66ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reflections" for 127.0.0.1 at 2018-01-19 02:36:03 -0500
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6I8MDKI1BBqVLW/qvFXFXmJKUcrRfBnYm/lE2HIjCoLF04kGubggkBm6et5OX4VEfVS/Zgcs8+TIYaT5vTsRGQ==", "reflection"=>{"name"=>";ljlajdsflasdjf", "relationship"=>"a;sldjfa;sdlfj", "thoughts"=>";alsdjfa;lsdfjas;dlfj"}, "commit"=>"Create Reflection"}
+No template found for ReflectionsController#create, rendering head :no_content
+Completed 204 No Content in 162ms (ActiveRecord: 0.0ms)
+
+
