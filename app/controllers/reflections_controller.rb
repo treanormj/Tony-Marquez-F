@@ -6,6 +6,11 @@ class ReflectionsController < ApplicationController
 
   def create
     @reflection = Reflection.new(reflection_params)
+    if @reflection.save
+      redirect_to reflection_path(@reflection)
+    else
+      render :new
+    end
   end
 
   def index

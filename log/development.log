@@ -13007,3 +13007,95 @@ Processing by ReflectionsController#index as HTML
 Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-21 12:45:45 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/marctreanor/challenges/Tony_Marquez_F/app/controllers/reflections_controller.rb:9: syntax error, unexpected keyword_if, expecting ')'
+    if @reflection.save
+      ^):
+  
+app/controllers/reflections_controller.rb:9: syntax error, unexpected keyword_if, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-03-21 12:45:55 -0400
+  
+SyntaxError (/Users/marctreanor/challenges/Tony_Marquez_F/app/controllers/reflections_controller.rb:9: syntax error, unexpected keyword_if, expecting ')'
+    if @reflection.save
+      ^):
+  
+app/controllers/reflections_controller.rb:9: syntax error, unexpected keyword_if, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-03-21 12:50:00 -0400
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (6.4ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (238.9ms)
+Completed 200 OK in 275ms (Views: 251.1ms | ActiveRecord: 17.5ms)
+
+
+Started GET "/reflections/new" for 127.0.0.1 at 2018-03-21 12:50:14 -0400
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (38.5ms)
+Completed 200 OK in 60ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reflections" for 127.0.0.1 at 2018-03-21 12:50:26 -0400
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kn3KC+lpkaP/i8t1Al8b5zeWW/MxDAb+46zY0XhXpG09FoDsWnNhfz+sQ7wbBPUnAK6EicnVGx2xF6u2HoGUVQ==", "reflection"=>{"name"=>"me", "relationship"=>"to be", "thoughts"=>"Or not to be"}, "commit"=>"Create Reflection"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 27ms (Views: 23.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 12:50:46 -0400
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.6ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 31ms (Views: 27.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/reflections/new" for 127.0.0.1 at 2018-03-21 12:51:12 -0400
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (231.6ms)
+Completed 200 OK in 276ms (Views: 255.0ms | ActiveRecord: 8.9ms)
+
+
+Started POST "/reflections" for 127.0.0.1 at 2018-03-21 12:51:33 -0400
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z8HdK8ZID0Bq9p1qtw9+oLBdrzqneswlF8NC8tAsfrdgqpfMdVL/nKrRFaOuVJBgh2VwQF+j0cZFeDGVtvpOjw==", "reflection"=>{"name"=>"buddy", "relationship"=>"the best nephew", "thoughts"=>"I liked him a lot."}, "commit"=>"Create Reflection"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.2ms)[0m  [1m[32mINSERT INTO "reflections" ("name", "relationship", "thoughts", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "buddy"], ["relationship", "the best nephew"], ["thoughts", "I liked him a lot."], ["created_at", "2018-03-21 16:51:33.571832"], ["updated_at", "2018-03-21 16:51:33.571832"]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/reflections/5
+Completed 302 Found in 29ms (ActiveRecord: 17.4ms)
+
+
+Started GET "/reflections/5" for 127.0.0.1 at 2018-03-21 12:51:33 -0400
+Processing by ReflectionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mReflection Load (0.6ms)[0m  [1m[34mSELECT  "reflections".* FROM "reflections" WHERE "reflections"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering reflections/show.html.erb within layouts/application
+  Rendered reflections/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 49ms (Views: 40.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 12:51:41 -0400
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.4ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 33ms (Views: 29.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/reflections/5" for 127.0.0.1 at 2018-03-21 12:51:46 -0400
+Processing by ReflectionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mReflection Load (0.4ms)[0m  [1m[34mSELECT  "reflections".* FROM "reflections" WHERE "reflections"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering reflections/show.html.erb within layouts/application
+  Rendered reflections/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 21.3ms | ActiveRecord: 0.4ms)
+
+
