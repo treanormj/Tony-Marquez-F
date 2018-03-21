@@ -12560,3 +12560,450 @@ No template found for ReflectionsController#create, rendering head :no_content
 Completed 204 No Content in 162ms (ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-16 04:26:53 -0400
+  [1m[35m (5.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (15.7ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (461.7ms)
+Completed 200 OK in 568ms (Views: 531.6ms | ActiveRecord: 25.3ms)
+
+
+Started GET "/reflections/new" for 127.0.0.1 at 2018-03-16 04:27:03 -0400
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (78.3ms)
+Completed 200 OK in 108ms (Views: 103.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reflections" for 127.0.0.1 at 2018-03-16 04:27:28 -0400
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OExnaMwagMyqsDoSAO4ze9iuSCcAHsbZGGWlPO6C3001rgBuDUViQ5xmJg1AGeh2NaRkty7XjBN/lHps8xMLrw==", "reflection"=>{"name"=>"bubba", "relationship"=>"daughter", "thoughts"=>"I was always tall for my age"}, "commit"=>"Create Reflection"}
+No template found for ReflectionsController#create, rendering head :no_content
+Completed 204 No Content in 171ms (ActiveRecord: 0.0ms)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(904173447529208955)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(904173447529208955)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-03-16 04:40:15 -0400
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.4ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 41ms (Views: 30.5ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/reflections/new" for 127.0.0.1 at 2018-03-16 04:40:21 -0400
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reflections" for 127.0.0.1 at 2018-03-16 04:40:33 -0400
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mkHB2amz1bv4NUSgJj48sWMLmwTFSOr3Yu0tH6mRU+WXo6bfaOw3NM7jWL9myee8jgG3lOuBoD0FHPJPtACHBw==", "reflection"=>{"name"=>"max", "relationship"=>"daughter", "thoughts"=>"the best"}, "commit"=>"Create Reflection"}
+No template found for ReflectionsController#create, rendering head :no_content
+Completed 204 No Content in 166ms (ActiveRecord: 0.0ms)
+
+
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "tony_marquez_development"[0m
+  [1m[35m (986.7ms)[0m  [1m[35mCREATE DATABASE "tony_marquez_development" ENCODING = 'unicode'[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "reflections" CASCADE[0m
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE "reflections" ("id" bigserial primary key, "name" character varying NOT NULL, "relationship" character varying NOT NULL, "thoughts" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "reflection_id" integer)[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171030190511)[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20171012185539),
+(20170830165058),
+(20171012160715),
+(20170829190402),
+(20170830165329),
+(20170828192400),
+(20171012191106);
+
+[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-03-16 08:41:50.560221"], ["updated_at", "2018-03-16 08:41:50.560221"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2018-03-16 04:42:00 -0400
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.3ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 04:42:03 -0400
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.3ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 04:42:06 -0400
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.4ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 36ms (Views: 33.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/reflections/new" for 127.0.0.1 at 2018-03-16 04:42:11 -0400
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reflections" for 127.0.0.1 at 2018-03-16 04:42:24 -0400
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DgKqTx1nSPIIVuQyInDosLPyI7BM4Y32XMs9QJ9koNgD4M1J3DiqfT6A+C1ihzO9XvgPIGIoxzw7OuIQgvV0Og==", "reflection"=>{"name"=>"smitty", "relationship"=>"the pity", "thoughts"=>"loved mitty"}, "commit"=>"Create Reflection"}
+No template found for ReflectionsController#create, rendering head :no_content
+Completed 204 No Content in 167ms (ActiveRecord: 0.0ms)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (216.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "tony_marquez_development"[0m
+  [1m[35m (630.4ms)[0m  [1m[35mCREATE DATABASE "tony_marquez_development" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "reflections" CASCADE[0m
+  [1m[35m (11.8ms)[0m  [1m[35mCREATE TABLE "reflections" ("id" bigserial primary key, "name" character varying NOT NULL, "relationship" character varying NOT NULL, "thoughts" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "reflection_id" integer)[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171030190511)[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20171012185539),
+(20170830165058),
+(20171012160715),
+(20170829190402),
+(20170830165329),
+(20170828192400),
+(20171012191106);
+
+[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-03-16 08:44:39.823511"], ["updated_at", "2018-03-16 08:44:39.823511"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3433080711580982490)[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3433080711580982490)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3433080711580982490)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3433080711580982490)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (135.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "tony_marquez_development"[0m
+  [1m[35m (629.1ms)[0m  [1m[35mCREATE DATABASE "tony_marquez_development" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "reflections" CASCADE[0m
+  [1m[35m (33.6ms)[0m  [1m[35mCREATE TABLE "reflections" ("id" bigserial primary key, "name" character varying NOT NULL, "relationship" character varying NOT NULL, "thoughts" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "reflection_id" integer)[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171030190511)[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20171012185539),
+(20170830165058),
+(20171012160715),
+(20170829190402),
+(20170830165329),
+(20170828192400),
+(20171012191106);
+
+[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-03-16 08:44:57.067367"], ["updated_at", "2018-03-16 08:44:57.067367"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2018-03-16 04:51:57 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.8ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (190.6ms)
+Completed 200 OK in 233ms (Views: 225.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 04:52:57 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (1.2ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (213.8ms)
+Completed 200 OK in 250ms (Views: 242.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/reflections/new" for 127.0.0.1 at 2018-03-16 04:53:04 -0400
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 99ms (Views: 64.8ms | ActiveRecord: 17.5ms)
+
+
+Started POST "/reflections" for 127.0.0.1 at 2018-03-16 04:53:15 -0400
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HnXS1qMs+homUQ+UQHKgMowNLrgcBWrLM9CXjbvMb5ATl7XQYnMYlRCHE4sAhXs/YQcCKDLMIAFUIUjdpl27cg==", "reflection"=>{"name"=>"max", "relationship"=>"the tax", "thoughts"=>"was flax"}, "commit"=>"Create Reflection"}
+No template found for ReflectionsController#create, rendering head :no_content
+Completed 204 No Content in 160ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/reflections/new" for 127.0.0.1 at 2018-03-16 04:56:25 -0400
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reflections" for 127.0.0.1 at 2018-03-16 04:56:42 -0400
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8NUGANK1j8pEpfdlUp2UlV/4W9K6sCMqn3wRN130nnr9N2EGE+ptRXJz63oSak+YsvJ3QpR5aeD4jc5nQGVKmA==", "reflection"=>{"name"=>"asfgsdfg", "relationship"=>"sdghsdfg", "thoughts"=>"sdfgsdfg"}, "commit"=>"Create Reflection"}
+No template found for ReflectionsController#create, rendering head :no_content
+Completed 204 No Content in 157ms (ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/reflections/new" for 127.0.0.1 at 2018-03-16 05:19:58 -0400
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 52ms (Views: 32.7ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 05:25:17 -0400
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.7ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (218.7ms)
+Completed 200 OK in 257ms (Views: 247.4ms | ActiveRecord: 3.2ms)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mReflection Load (2.6ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "reflections" ("name", "relationship", "thoughts", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Marc"], ["relationship", "son-in-law"], ["thoughts", "Tony is one of the most amazing people I will ever meet."], ["created_at", "2018-03-16 09:25:43.361751"], ["updated_at", "2018-03-16 09:25:43.361751"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "reflections" ("name", "relationship", "thoughts", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Lorelai"], ["relationship", "Granddaughter"], ["thoughts", "Tony is loved very much."], ["created_at", "2018-03-16 09:25:43.367762"], ["updated_at", "2018-03-16 09:25:43.367762"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2018-03-16 05:25:46 -0400
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.8ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (46.8ms)
+Completed 200 OK in 87ms (Views: 65.5ms | ActiveRecord: 18.6ms)
+
+
+Started GET "/reflections/1" for 127.0.0.1 at 2018-03-16 05:25:53 -0400
+Processing by ReflectionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mReflection Load (0.4ms)[0m  [1m[34mSELECT  "reflections".* FROM "reflections" WHERE "reflections"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering reflections/show.html.erb within layouts/application
+  Rendered reflections/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 35ms (Views: 20.7ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/reflections/1" for 127.0.0.1 at 2018-03-16 05:26:03 -0400
+Processing by ReflectionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PtlDmmQGAzKbdNZwgPOjNSVW0uZt9apnZFzvCK+RA3IzOyScpVnhva2iym/ABHg4yFz+dkM84K0DrTBYsgDXkA==", "id"=>"1"}
+  [1m[36mReflection Load (0.4ms)[0m  [1m[34mSELECT  "reflections".* FROM "reflections" WHERE "reflections"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "reflections" WHERE "reflections"."id" = $1[0m  [["id", 1]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/reflections
+Completed 302 Found in 6ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/reflections" for 127.0.0.1 at 2018-03-16 05:26:03 -0400
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.3ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mReflection Load (0.9ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "reflections" WHERE "reflections"."id" = $1[0m  [["id", 2]]
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "reflections" ("name", "relationship", "thoughts", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Marc"], ["relationship", "son-in-law"], ["thoughts", "Tony is one of the most amazing people I will ever meet."], ["created_at", "2018-03-16 09:26:13.506361"], ["updated_at", "2018-03-16 09:26:13.506361"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "reflections" ("name", "relationship", "thoughts", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Lorelai"], ["relationship", "Granddaughter"], ["thoughts", "Tony is loved very much."], ["created_at", "2018-03-16 09:26:13.509126"], ["updated_at", "2018-03-16 09:26:13.509126"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/reflections" for 127.0.0.1 at 2018-03-16 05:26:18 -0400
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.7ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 05:26:31 -0400
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.4ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 48ms (Views: 44.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-18 15:35:01 -0400
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (1.2ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (353.0ms)
+Completed 200 OK in 401ms (Views: 309.4ms | ActiveRecord: 85.5ms)
+
+
+Started GET "/reflections/new" for 127.0.0.1 at 2018-03-18 15:35:06 -0400
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (38.3ms)
+Completed 200 OK in 90ms (Views: 87.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reflections" for 127.0.0.1 at 2018-03-18 15:35:27 -0400
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZZQPuYpKmZqevlBDxc38fBgD4wGerjSu8BocEEjuHQki++DPss+/WMNKORxeV6RzsGLveoqEi+VXwSp/Uy7Jjw==", "reflection"=>{"name"=>"dghdfgh", "relationship"=>"ghgdgfh", "thoughts"=>"sthdfghghghghgddfghdfhghtdgg"}, "commit"=>"Create Reflection"}
+Completed 500 Internal Server Error in 144ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `successfully”' for #<ReflectionsController:0x007ff9c64461b0>):
+  
+app/controllers/reflections_controller.rb:9:in `create'
+Started POST "/reflections" for 127.0.0.1 at 2018-03-18 15:36:06 -0400
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZZQPuYpKmZqevlBDxc38fBgD4wGerjSu8BocEEjuHQki++DPss+/WMNKORxeV6RzsGLveoqEi+VXwSp/Uy7Jjw==", "reflection"=>{"name"=>"dghdfgh", "relationship"=>"ghgdgfh", "thoughts"=>"sthdfghghghghgddfghdfhghtdgg"}, "commit"=>"Create Reflection"}
+No template found for ReflectionsController#create, rendering head :no_content
+Completed 204 No Content in 175ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-20 10:22:47 -0400
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (71.2ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (368.9ms)
+Completed 200 OK in 446ms (Views: 349.3ms | ActiveRecord: 71.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-20 10:22:48 -0400
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (1.1ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 55ms (Views: 50.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-20 10:42:10 -0400
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.8ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 40ms (Views: 35.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-20 10:42:10 -0400
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.5ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 34ms (Views: 32.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 12:19:15 -0400
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (36.1ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (355.3ms)
+Completed 200 OK in 426ms (Views: 381.6ms | ActiveRecord: 36.1ms)
+
+
+Started GET "/reflections/3" for 127.0.0.1 at 2018-03-21 12:20:49 -0400
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ReflectionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mReflection Load (2.8ms)[0m  [1m[34mSELECT  "reflections".* FROM "reflections" WHERE "reflections"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering reflections/show.html.erb within layouts/application
+  Rendered reflections/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 361ms (Views: 295.3ms | ActiveRecord: 43.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 12:20:57 -0400
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (1.1ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 47ms (Views: 31.7ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/reflections/new" for 127.0.0.1 at 2018-03-21 12:21:03 -0400
+Processing by ReflectionsController#new as HTML
+  Rendering reflections/new.html.erb within layouts/application
+  Rendered reflections/new.html.erb within layouts/application (70.5ms)
+Completed 200 OK in 91ms (Views: 88.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reflections" for 127.0.0.1 at 2018-03-21 12:21:28 -0400
+Processing by ReflectionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tv+wBo72nPhcX9JblvN4lmLik5nvz3ZTEseSw+x0aj0ZlPrhPexsJJx4WpKPqJZWVdpM4xcWa7BAfOGkiqJaBQ==", "reflection"=>{"name"=>"asldjfhasdlfj", "relationship"=>"gjigols;lfg", "thoughts"=>"Good job!ksdfhskdzjf"}, "commit"=>"Create Reflection"}
+No template found for ReflectionsController#create, rendering head :no_content
+Completed 204 No Content in 176ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 12:26:01 -0400
+Processing by ReflectionsController#index as HTML
+  Rendering reflections/index.html.erb within layouts/application
+  [1m[36mReflection Load (0.4ms)[0m  [1m[34mSELECT "reflections".* FROM "reflections"[0m
+  Rendered reflections/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.4ms)
+
+
