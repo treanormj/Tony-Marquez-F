@@ -6,6 +6,7 @@ class ReflectionsController < ApplicationController
 
   def create
     @reflection = Reflection.new(reflection_params)
+    # I need this if statemnt in order to actually save the new reflection
     if @reflection.save
       redirect_to reflection_path(@reflection)
     else
