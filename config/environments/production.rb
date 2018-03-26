@@ -1,6 +1,11 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # This is supposed to tell Rails to serve static assests itself. As far as I understand, that means it will enable static pages.
+  # config.serve_static_assets = true
+    # Code is not reloaded between requests.
+    config.cache_classes = true
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 

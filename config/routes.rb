@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   end
 
   # this is for adding a static page
-  get "/:page" => "static#show"
+  get "statpics/:page" => "static#show"
 end
